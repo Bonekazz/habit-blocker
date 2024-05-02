@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .custom-btn {
+    @apply active:top-0 transition-all ease-in-out;
+  }
+}
+
+@layer utilities {
+    * {
+        transition: all 0.3s ease-in-out;
+    }
+    
+    html {
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+}

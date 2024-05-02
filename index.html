@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <main class="w-full p-5">
+
+
+      <section id="inputs-wrapper" class="flex flex-col items-center w-full gap-4">
+        <div class="flex flex-col mt-5 w-full">
+          <button id="block-current-btn" class="border border-black p-2 rounded-lg bg-white relative top-[-8px] z-[2] custom-btn w-full">block current website</button>
+          <span class="border border-black p-2 rounded-lg bg-black relative mt-[-22px] w-full h-[20px]"></span>
+          <span id="error-span" class="text-red-600 hidden">something went wrong with the response</span>
+        </div>
+
+        <!-- <p>Or</p>
+        <div class="flex items-center justify-between w-full">
+          <input type="text" placeholder="type a specific url" class="border p-2 rounded-lg w-[80%] h-[50px]">
+          <div class="flex flex-col mt-2">
+            <button class="border border-black p-2 rounded-lg bg-white relative top-[-8px] z-[2] custom-btn w-[50px]">+</button>
+            <span class="border border-black p-2 rounded-lg bg-black relative mt-[-22px] w-[50px] h-[20px]"></span>
+          </div>
+        </div> -->
+        
+      </section>
+
+      <section id="blocked-wrapper" class="mt-[2em]">
+        <header>
+          <h1 class="text-3xl">blocked</h1>
+        </header>
+        <ul id="blocked-urls-list" class="flex flex-col gap-4 mt-10">
+          <!-- <li class="flex justify-between items-center">
+            <div class="flex gap-5 w-[70%]">
+              <img src="https://seilaaaa.com/">
+              <span class="text-sm">https://somesite.com/</span>
+            </div>
+            <div class="flex gap-5">
+              <input type="checkbox">
+              <button id="random-uuid" class="delete-url-btn border rounded-md w-5">.</button>
+            </div>
+          </li> -->
+
+          
+        </ul>
+      </section>
+
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

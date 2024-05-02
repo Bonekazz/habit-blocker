@@ -1,0 +1,25 @@
+{
+  "name": "habit-blocker",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && tsc",
+    "nmon": "nodemon --watch index.html --watch src --watch public -e ts,json,html --exec make",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.266",
+    "@types/firefox-webext-browser": "^120.0.3",
+    "autoprefixer": "^10.4.19",
+    "nodemon": "^3.1.0",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "lucide": "^0.376.1"
+  }
+}
